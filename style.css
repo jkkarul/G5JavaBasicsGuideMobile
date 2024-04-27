@@ -42,15 +42,17 @@ body {
 #accordian {
   background: #171717;
   width: 100%; 
-  padding: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   height: auto; 
   overflow-x: hidden;
   position: relative;
-  padding-right: 0px;
   z-index: 1000;
   top: 0;
   left: 0;
   float: none; 
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .main-navbar {
