@@ -97,53 +97,30 @@ body::-webkit-scrollbar {
   color: #d8da7d !important;
 }
 
-/* --------- profile -----------*/
-.profile {
-  text-align: center;
-  padding: 32px;
-  margin-bottom: 14px;
-}
-
-.profile h4 {
-  color: #2e74b9;
-  font-size: 23px;
-}
-
-.profile small {
-  color: #cb2d2e;
-  font-size: 14px;
-}
-
-.bg-img {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: cover;
-}
-
-.profile-img {
-  height: 150px;
-  width: 150px;
-  display: inline-block;
-}
-
 /* --------- navbar-menu-list -----------*/
 
 #accordian {
   background: #171717;
-  width: 250px;
+  width: 100%; 
   padding: 10px;
-  float: left;
-  height: 100vh;
+  height: auto; 
   overflow-x: hidden;
   position: relative;
   padding-right: 0px;
   z-index: 1000;
   top: 0;
   left: 0;
+  float: none; 
 }
 
 .main-navbar {
-  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#accordian ul li a {
+  line-height: normal; /* Change the line-height to normal */
+  padding: 10px 20px; /* Adjust the padding as needed */
 }
 
 #accordian li {
@@ -197,57 +174,19 @@ body::-webkit-scrollbar {
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265);
   background-color: #0f0f0f;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 50px;
 }
 
-.selector-active .top,
-.selector-active .bottom {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  background-color: #0f0f0f;
-  right: 0;
-}
 
-.selector-active .top {
-  top: -25px;
-}
-
-.selector-active .bottom {
-  bottom: -25px;
-}
-
-.selector-active .top:before,
-.selector-active .bottom:before {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #171717;
-}
-
-.selector-active .top:before {
-  left: -25px;
-  top: -25px;
-}
-
-.selector-active .bottom:before {
-  bottom: -25px;
-  left: -25px;
-}
 
 i {
   margin-right: 10px;
 }
 
 
-
 /* --------- main-content -----------*/
 
 .main-content {
-  margin-left: 250px;
   height: 100vh;
   margin-top: 0;
   color: #fff;
