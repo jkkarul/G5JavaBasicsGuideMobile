@@ -178,14 +178,13 @@ main.table {
   box-shadow: 0 0.4rem 0.8rem #0005;
   border-radius: .8rem;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .table__body {  
   width: 98%;
   height:66%;
   background-color: #171717;
-  font-size: 18px;
   margin: 1.05rem auto;
   border-radius: .6rem;
   overflow: auto;
@@ -194,7 +193,7 @@ main.table {
 
 .table__header {
   width: 100%;
-  height: 3.5rem;
+  height: 1.9rem;
   background-color: #171717;
   padding: .5rem 0rem;
   display: flex;
@@ -214,10 +213,10 @@ main.table2 {
 }
 
 #table__body2{
-  width: 98%;
+  width: 94%;
   height:59.5%;
   background-color: #171717;
-  font-size: 18px;
+  font-size: 13px;
   margin: 1.05rem auto;
   border-radius: .6rem;
   overflow: auto;
@@ -226,7 +225,7 @@ main.table2 {
 
 #table__header2{
   width: 100%;
-  height: 4rem;
+  height: 1.9rem;
   background-color: #171717;
   padding: .5rem 0rem;
   display: flex;
@@ -302,7 +301,7 @@ main.table4 {
 .table__header h1 {
   margin: 0;
   padding: 0;
-  font-size: 25px;
+  font-size: 14px;
   text-align: center;
   cursor: default;
 }
@@ -329,11 +328,6 @@ main.table4 {
   font-size: 15px;
   text-align: center;
   cursor: default;
-}
-
-h1 > i {
-  margin-right: 15px;
-  font-size: 22px;
 }
 
 tr > th > i {
