@@ -162,7 +162,7 @@ body {
   }
 }
 
-/* -------------------- topics ----------------------*/
+/* -------------------- topics ---------------------- FIX VIEWPORT HEIGHT PROBLEM ON TOPICS MAIN HUB UI IS NOT DONE*/
 
 #topic-wrapper {
   display: flex;
