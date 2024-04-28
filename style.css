@@ -388,9 +388,9 @@ th{
   transform: translate(-50%, -50%);
   background-color: #171717;
   color: #fff;
-  padding: 12px 30px;
+  padding: 6px 19px;
   border-radius: 0.8rem;
-  font-size: 22px;
+  font-size: 12px;
   font-weight: bold;
   opacity: 0;
   font-style: monospace;
