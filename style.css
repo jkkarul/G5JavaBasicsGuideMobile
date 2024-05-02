@@ -123,7 +123,7 @@ body {
 /* -------------------- site-info ----------------------*/
 
 .info-wrapper {
-  height: 30rem;
+  min-height: 100vh;
   display: grid;
   place-items: center;
 }
