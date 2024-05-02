@@ -194,6 +194,14 @@ main.table {
   justify-content: center;
 }
 
+.table__header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: default;
+}
+
 main.table2 {
   width: 82vw;
   height: 10.6rem;
@@ -287,15 +295,6 @@ main.table4 {
   border-radius: .6rem;
   overflow: auto;
   overflow: overlay;
-}
-
-
-.table__header h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  text-align: center;
-  cursor: default;
 }
 
 .table__header2 h1 {
