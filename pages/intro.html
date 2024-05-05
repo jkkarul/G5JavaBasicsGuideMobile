@@ -50,7 +50,7 @@
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-               <h1>#1: Programs and Programming Languages</h1>
+               <h1>#1: Programs and Programming <br>Languages</h1>
               </section>
               <section class="table__body">
                 <table>
@@ -74,8 +74,8 @@
                   </thead>
                     <div class="module-container">
                       <div class="document-container">
-                      <h3 id="learnobj">Learning Objectives<h3>
-                      <h4>After completing this lesson, you should be able to:</h5>
+                      <h3 id="learnobj">Learning Objectives:<h3>
+                      <h4></h4>
                       <p>1. Define what a program and programming language are.</p>
                       <p>2. Understand the concept of machine language and its binary nature.</p>
                       <p>3. Explain the purpose of assembly language and the role of an assembler.</p>
@@ -83,13 +83,13 @@
                       <p>5. Differentiate between compilers and interpreters in translating source code to machine code.</p>
                       <h3 id="lessoncont">Lesson Content</h3>
 
-                      <h4>1. Introduction to Programs and Programming Languages</h4>
+                      <h4>1. Introduction to Programs and Programming Languages:</h4>
                       <p>• A program (or software) is a set of instructions that tell a computer what to do.</p>
                       <p>• Programs are used to interact and communicate with computers.</p>
                       <p>• To write programs, we use programming languages.</p>
                       <p>• Programming languages are languages that are used to write programs and are understood by computers.</p>
 
-                      <h4>2. Machine Language</h4>
+                      <h4>2. Machine Language:</h4>
                       <p>• Machine language is the computer's native language, using only 0s and 1s (binary).</p>
                       <p>• It is the main language of the computer, and all instructions must eventually be translated into machine language before execution.</p>
                       <p>• Machine language instructions are in the form of binary codes that directly represent the specific operations the computer's processor can perform.</p>
@@ -104,7 +104,7 @@
 
                       <p id="extrainfo">• This low-level, binary representation is what the computer's hardware can directly understand and execute.</p>
 
-                      <h4 id="assemblylang">3. Assembly Language</h4>
+                      <h4 id="assemblylang">3. Assembly Language:</h4>
                       <p>• Assembly language is a type of programming language that is very close to the way a computer's processor works.</p>
                       <p>• It's different from the higher-level languages that most people are familiar with, like Python or Java.</p>
                       <p>• In high-level languages, you write code using words and concepts that are easy for humans to understand. 
@@ -115,9 +115,8 @@
                         <p>• The main idea behind assembly language is to provide a way for programmers to have more direct access to the inner workings of the computer, 
                           without having to deal with all the low-level details of the processor itself.</p>
                           <p>• It's like having a "direct line" to the computer's brain, instead of going through all the layers of abstraction.</p>
-                      <h5>• Example: Adding 2 and 3 in Assembly Language</h5>
-                      <pre>
-                        <div class="hljs-wrapper"><code>MOV AX, 2   # Move the value 2 into the AX register
+                      <h5 style="margin-bottom: 7px;">• Example: Adding 2 and 3 in Assembly Language</h5>
+                      <pre><div class="hljs-wrapper"><code>MOV AX, 2   # Move the value 2 into the AX register
 ADD AX, 3   # Add 3 to the value in the AX register
 # symbol is used to indicate a comment, which the assembler will ignore.</code>
 <span class="hljs-lang-label">ASSEMBLY</span></div>
@@ -127,29 +126,29 @@ ADD AX, 3   # Add 3 to the value in the AX register
                         and the ADD instruction adds the value 3 to the contents of the AX register. This example is an oversimplified 
                         version of actual assembly language writing. This is why high-level programming languages were made:</p>
 
-                      <h4>4. High-Level Programming Languages</h4>
+                      <h4>4. High-Level Programming Languages:  </h4>
                       <p>• High-level programming languages use English words and are easier to learn and use.</p>
                       <p>• Each instruction in a high-level language is called a statement.</p>
                       <p>• A program written in a high-level language is called source code or a source program.</p>
                       <p>• The key differences between high-level languages like Java and low-level languages like assembly <br>or machine code are:</p>
-                      <div class="pexample">
-                      <p>• High-level languages use more human-readable syntax and instructions, making them easier to understand and write.</p>
-                      <p>• High-level languages are machine-independent, meaning the same code can run on different types of computers without modification.</p>  
-                      <p>• High-level languages require a compiler or interpreter to translate the code into the machine-specific instructions the computer can execute directly.</p>
-                    </div>
-                      <h5>• Example: This is how adding 2 and 3 is written in Java, a high-level language:</h5>
-                      <pre id="java-add"><div class="hljs-wrapper"><code class="language-java">int result = 2 + 3; // This adds 2 and 3 and stores the result in the variable 'result'
-System.out.println(result); // This displays the result to the user
+                      <p>1. High-level languages use more human-readable syntax and instructions, making them easier to understand and write.</p>
+                      <p>2. High-level languages are machine-independent, meaning the same code can run on different types of computers without modification.</p>  
+                      <p>3. High-level languages require a compiler or interpreter to translate the code into the machine-specific instructions the computer can execute directly.</p>
+                      <h5 style="margin-bottom: -21px;">• Example: This is how adding 2 and 3 is written in Java, a high-level language:</h5>
+<pre id="java-add"><div class="hljs-wrapper"><code class="language-java">int result = 2 + 3; 
+// This adds 2 and 3 and stores the result in the variable 'result'
+System.out.println(result); 
+// This displays the result to the user
 </code><span class="hljs-lang-label">JAVA</span></div></pre>
 
-                      <h4>5. Translating Source Code to Machine Code</h4>
+                      <h4 style="margin-top: 7px;">5. Translating Source Code to Machine Code</h4>
                       <p>• Source code written in high-level languages cannot be directly executed by computers.</p>
                       <p>• It must be translated into machine code before execution.</p>
                       <p>• This translation can be done using a compiler or an interpreter.</p>
                       <p>• A compiler translates the entire source code into machine code at once, producing an executable file.</p>
                       <p>• An interpreter translates and executes each statement of the source code one by one.</p>
                     
-                      <h3 id="reviewquest"><i class="fa-regular fa-circle-down" style="margin-right: 12px;"></i>Proceed to Lesson #2<i class="fa-regular fa-circle-down" style="margin-left: 12px;"></i></h3>          
+                      <h3 id="reviewquest"><i class="fa-regular fa-circle-right" style="margin-right: 6px; font-size: 12px;"></i>Proceed to Lesson #2<i class="fa-regular fa-circle-right" style="margin-left: 6px; font-size: 12px;"></i></h3>          
                       </div>
                     </div>
                   </tbody>
@@ -164,7 +163,7 @@ System.out.println(result); // This displays the result to the user
           <div id="topic-wrapper">
             <main class="table" id="tab">
               <section class="table__header">
-              <h1><i class="fa-solid fa-book"></i>#2: Introduction to Java Programming</h1>
+              <h1>#2: Introduction to Java Programming</h1>
               </section>
               <section class="table__body">
                 <table>

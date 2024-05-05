@@ -16,31 +16,15 @@ body {
   font-family: monospace;
   background-color: #0f0f0f;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  -ms-overflow-style: none;   
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-::-webkit-scrollbar {
-  width: 3px; 
-  height: 3px; 
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #888; 
-  border-radius: 6px; 
-}
-
-::-webkit-scrollbar-thumb:hover {
-  width: 6px; 
-  height: 6px; 
-}
 
 .hljs {
   background-color: #0f0f0f !important;
-  border-radius: 0.8rem;
+  border-radius: 0.8rem !important;
+  text-align: left !important;
 }
 
 .hljs-comment {
@@ -49,7 +33,7 @@ body::-webkit-scrollbar {
 
 .hljs {
   font-family: monospace !important;
-  font-size: 18px !important;
+  font-size: 9px !important;
 }
 
 .hljs-wrapper {
@@ -63,9 +47,9 @@ body::-webkit-scrollbar {
   right: 0 !important;
   background-color: #272727 !important;
   color: #fff !important;
-  padding: 3px 8px !important;
-  font-size: 14px !important;
-  border-bottom-left-radius: 6px !important;
+  padding: 2px 5px !important;
+  font-size: 8px !important;
+  border-bottom-left-radius: 3px !important;
   cursor: pointer !important;
   transition: background-color 0.3s ease !important;
   display: flex !important;
@@ -168,7 +152,6 @@ body::-webkit-scrollbar {
   border-radius: 50px;
 }
 
-
 /* --------- main-content -----------*/
 
 .main-content {
@@ -224,28 +207,27 @@ body::-webkit-scrollbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100rem;
+  height: 135rem;
 }
 
 main.table {
-  width: 82vw;
-  height: 40rem;
+  width: 92vw;
+  height: 14rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
   border-radius: .8rem;
   overflow: hidden;
-  margin-top: 53px;
+  margin-top: 50px;
 }
 
 .table__body {
-  width: 93%;
-  height:64.935%;
+  width: 96%;
+  height:71%;
   background-color: #171717;
-  margin: 0.68rem auto;
+  margin: 0.47rem auto;
   border-radius: .6rem;
-  overflow: auto;
-  overflow: overlay;
+  overflow: hidden;
 }
 
 .table__header {
@@ -259,23 +241,21 @@ main.table {
 }
 
 main.table2 {
-  width: 82vw;
-  height: 184.5rem;
+  width: 92vw;
+  height: 114.1rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
   border-radius: .8rem;
-  overflow: hidden;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 #table__body2{
   width: 98%;
-  height:95.9%;
+  height:96.39%;
   background-color: #171717;
   font-size: 18px;
-  margin: 1.05rem auto;
+  margin: 0.68rem auto;
   border-radius: .6rem;
   overflow: auto;
   overflow: overlay;
@@ -291,8 +271,10 @@ main.table2 {
 
 #table__header2{
   width: 100%;
-  height: 4.5rem;
+  height: 2.2rem;
   background-color: #171717;
+  border-top-left-radius:  0.8rem;
+  border-top-right-radius: 0.8rem;
   padding: .5rem 0rem;
   display: flex;
   align-items: center;
@@ -301,8 +283,8 @@ main.table2 {
 
 
 h1 > i {
-  margin-right: 20px;
-  font-size: 21px;
+  margin-right: 7px;
+  font-size: 12px;
 }
 
 
@@ -351,66 +333,61 @@ thead > tr > th {
 
 .iframe-container {
   position: relative;
-  width: 98%;
-  padding-bottom: 40.9%; 
+  width: 95%;
+  padding-bottom: 55%; 
   overflow: hidden;
   margin: 0 auto; 
-  border-radius: 0.8rem;
 }
 
 .iframe-container iframe {
   position: absolute;
-  top: 16px;
   left: 0;
   width: 100%;
   height: 98%;
-  border-radius: 0.8rem;
 }
 
 .module-container {
-  margin: 1.54cm;
-  border: 4px dashed #0f0f0f;
-  border-radius: 0.8rem;
+  margin: 2px;
+  border: 2px dashed #0f0f0f;
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
 .document-container {
-  margin-left: 3.384cm;
-  margin-right: 3.384cm;
-  margin-top: 1.84cm;
-  margin-bottom: 1.84cm;
-}
+  margin: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+} 
 
 .module-container p + h3 {
-  margin-top: 20pt;
-}
-
-.module-container h4 {
-  margin-bottom: 18pt;
-  margin-top: 20pt;
+  margin-top: 0pt;
 }
 
 .module-container h5 {
-  font-size: 18px;
+  font-size: 10px;
   font-style: bold;
-  margin-top: 15pt;
-  margin-bottom: 2pt;
+  margin-top: 0pt;
+  margin-bottom: 0pt;
 }
 
 .module-container h3 {
-  font-size: 28px;
+  font-size: 14px;
   font-style: bold;
   text-align: center;
 }
 
 .module-container p {
-  font-size: 18px;
-  margin-left: 20pt;
-  margin-bottom: 10pt;
+  font-size: 10px;
+  margin-left: 0pt;
+  margin-bottom: 4px;
 }
 
 .module-container h4 {
-  font-size: 21px;
+  font-size: 11px;
   font-style: bold;
+  margin-bottom: 7px;
+  margin-top: 0pt;
+  text-align: left;
 }
 
 .pcode {
@@ -427,24 +404,24 @@ thead > tr > th {
 }
 
 #learnobj {
-  margin-bottom: 33pt;
+  margin-bottom: 8px;
 }
 
 #lessoncont {
-  margin-top: 33pt;
-  margin-bottom: 33pt;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 #reviewquest {
-  margin-top: 40pt;
+  margin-top: 10px;
 }
 
 #exampleformatting {
-  margin-bottom: 15pt;
+  margin-bottom: 7px;
 }
 
 #complicated {
-  margin-top: -15pt;
+  margin-top: -36px;
 }
 
 #java-add {
@@ -452,38 +429,39 @@ thead > tr > th {
 }
 
 #assemblylang {
-  margin-top: -14pt;
+  margin-top: -33px;
 }
 
 #extrainfo {
   margin-bottom: 28pt !important;
 }
 
-.pexample {
-  margin-left: 25pt;
-  margin-top: 2pt;
-}
-
 /* -------------------- topic-2 ----------------------*/
 
+.tasks-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 135rem;
+}
+
 main.table3 {
-  width: 82vw;
-  height: 145.8rem;
+  width: 92vw;
+  height: 90rem;
   background-color: #0f0f0f;
   backdrop-filter: blur(7px);
   box-shadow: 0 0.4rem 0.8rem #0005;
   border-radius: .8rem;
-  overflow: hidden;
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 #table__body3{
   width: 98%;
-  height:94.82%;
+  height:93%;
   background-color: #171717;
   font-size: 18px;
-  margin: 1.05rem auto;
+  margin: 0.68rem auto;
   border-radius: .6rem;
   overflow: auto;
   overflow: overlay;
@@ -491,8 +469,10 @@ main.table3 {
 
 #table__header3{
   width: 100%;
-  height: 4.5rem;
+  height: 2.2rem;
   background-color: #171717;
+  border-top-left-radius:  0.8rem;
+  border-top-right-radius: 0.8rem;
   padding: .5rem 0rem;
   display: flex;
   align-items: center;
@@ -583,14 +563,6 @@ a {
 
 /* -------------------- tasks ----------------------*/
 
-.tasks-wrapper {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 /* -------------------- java-compiler ----------------------*/
 
